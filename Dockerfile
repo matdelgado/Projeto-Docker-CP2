@@ -4,8 +4,8 @@ WORKDIR /app
 
 ARG APP
 
-ENV APP_FILE=$APP.py
+ENV APP_FILE=${APP}.py
 
-COPY $APP_FILE /app/
+COPY ${APP}.py /app/
 
-CMD ["python", "/app/$APP_FILE"]
+CMD ["python", "$APP_FILE"]
