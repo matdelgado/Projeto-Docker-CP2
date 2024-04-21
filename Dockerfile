@@ -8,4 +8,4 @@ ENV APP_FILE=${APP}.py
 
 COPY ${APP}.py /app/
 
-CMD ["python", "$APP_FILE"]
+CMD python ${APP_FILE}
